@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">              
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Sign Up</h1>
+             </div></br></br></br>
+	<p class="header">Already have an account?  <a class="header" href="{{url_for('login')}}"> Sign In here</a></p>
+            <h2 class="word">
+                <form action="{{ url_for('register') }}" method="post">
+                  <div class="msg"></div>
+                 Email Id</br><input id="email" name="email" type="text" placeholder="Enter Email ID" class="textbox"/></br></br>
+                    Password</br><input id="password" name="password" type="password" placeholder="Enter Password" class="textbox"/></br></br>
+                    Secret Key</br><input id="key" name="key" type="password" placeholder="Enter secret key" class="textbox"/></br></br>
+                    <input type="submit" class="btn" value="Sign Up"></br>
+                </form>
+            </h2>
+            <p class="bottom">"By clicking the "Sign Up" button, you are creating an </br> account and you agree to the Terms of use.</p>
+          </div>
+        </div>
+    </body>
+</html>

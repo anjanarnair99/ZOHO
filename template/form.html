@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Contact form and contact list page </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">                     
+    </head>
+    <body></br></br></br></br></br>
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">Contact Form and Contact List Page</h1>
+             </div></br></br></br>
+                <h1 class="bottom">
+                  Add Contacts                  
+                </h1></br>
+                <h2 class="word">
+                <form action="{{ url_for('register') }}" method="post">
+                  <div class="msg"></div>
+                 Name &nbsp; &nbsp; &nbsp;<input id="name" name="name" type="text" placeholder="Enter Name" class="textbox"/></br></br>
+                    Ph No  &nbsp; &nbsp; &nbsp;<input id="phone" name="phone" type="text" placeholder="Enter Phone number" class="textbox"/></br></br>
+                    Email  &nbsp; &nbsp; &nbsp;<input id="email" name="email" type="text" placeholder="Enter email" class="textbox"/></br></br>
+                    <input type="submit" class="btn" value="Save"></br>
+                </form>
+            </h2>
+          </div>
+        </div>
+    </body>
+</html>
